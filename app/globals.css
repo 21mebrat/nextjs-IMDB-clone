@@ -1,8 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* globals.css */
 :root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --accent: #0070f3;
+}
+
+.dark {
+  --background: #000000;
+  --foreground: #ffffff;
+  --accent: #1e90ff;
+}
+
+/* Use the variables in other styles */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+
+
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -18,4 +39,4 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
-}
+} */

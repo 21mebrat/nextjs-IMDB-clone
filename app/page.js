@@ -1,10 +1,22 @@
+import Results from '@components/Results'
 import React from 'react'
 
-const page = () => {
+const page = async () => {
+  await new Promise((resolve)=> setTimeout(resolve,4000))
+  let data 
+  const fetchResult = async () => {
+    try {
+      const res = await fetch('url')
+       data = await res.json()
+    } catch (error) {
+      console.log(error)
+      throw Error(error.message || 'failed to fetch Results.')
+    }
+  }
   return (
-    <div className='text-red-500 text-4xl'>
-      <h1>nexjs home page</h1>
-      
+    <div>
+      <Results result={data} />
+      home page
     </div>
   )
 }
