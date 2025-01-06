@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
             {/* header is here */}
             <Headers />
             <NavBar />
-            <main>
+            <main className="mt-8">
               {children}
             </main>
           </div>

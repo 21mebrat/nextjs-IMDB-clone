@@ -5,11 +5,11 @@ const NavBar = () => {
     <div className='bg-gray-600 text-white p-4 flex gap-6 justify-center'>
         <NavBarItems
         title='Tranding'
-        param='fetchTranding'
+        param='upcoming'
          />
         <NavBarItems
         title='Top Related'
-        param='fetchTopRelated'
+        param='now-playing'
          />
     </div>
   )
