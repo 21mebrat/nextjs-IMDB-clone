@@ -17,7 +17,7 @@ console.log(param)
   console.log(data)
   // Return JSX
   return (
-    <div className="w-full max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
+    <div className="sm:max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
       <Results movies={data.results} />
     </div>
   );

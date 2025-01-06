@@ -2,6 +2,7 @@ import Headers from "@components/commons/Headers";
 import "./globals.css";
 import Providers from "./Providers";
 import NavBar from "@components/NavBar";
+import SearchBox from "@components/commons/SearchBox";
 
 export default function RootLayout({ children }) {
   return (
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
             {/* header is here */}
             <Headers />
             <NavBar />
+            <SearchBox />
             <main className="mt-8">
               {children}
             </main>
